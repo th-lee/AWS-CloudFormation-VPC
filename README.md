@@ -90,21 +90,21 @@ AWS CloudFormation for VPC
 
 <table>
 	<tr>
-		<td colspan=3 width=180>A-Class</td>
-		<td colspan=3 width=180>B-Class</td>
-		<td colspan=3 width=180>C-Class</td>
+		<td colspan=3 width=240>A-Class</td>
+		<td colspan=3 width=240>B-Class</td>
+		<td colspan=3 width=240>C-Class</td>
 		<td width=80>D-Class</td>
 	</tr>
 	<tr>
-		<td width=60>N/A</td>
-		<td width=60>1(fixed)</td>
-		<td width=60>0(fixed)</td>
-		<td colspan=2 width=120>Region</td>
-		<td width=60>Biz Svc</td>
-		<td width=60>Pub/Pri</td>
-		<td width=60>AZ</td>
-		<td width=60>Subnet</td>
-		<td width=60>0</td>
+		<td width=80>N/A</td>
+		<td width=80>1(fixed)</td>
+		<td width=80>0(fixed)</td>
+		<td colspan=2 width=160>Region</td>
+		<td width=80>Biz Svc</td>
+		<td width=80>Pub/Pri</td>
+		<td width=80>AZ</td>
+		<td width=80>Subnet</td>
+		<td width=80>0</td>
 	<tr>
 	
 </table>	
