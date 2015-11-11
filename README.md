@@ -86,7 +86,7 @@ AWS CloudFormation for VPC
 <br>
 
 
-## IP Address Digit
+# IP Address Digit
 
 <table>
 	<tr>
@@ -109,8 +109,8 @@ AWS CloudFormation for VPC
 	
 </table>	
 	
-
-# Assigning IP-Addresses (ex. us-east-1)
+<br><br>
+### Assigning IP-Addresses (ex. us-east-1)
 
 <table>
     <tr>
