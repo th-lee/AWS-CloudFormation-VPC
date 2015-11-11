@@ -6,15 +6,15 @@ AWS CloudFormation for VPC
 # Supported Region
 
 ```
-us-east-1(CIDR : 10.13.0.0/16) : US East (N. Virginia)
-us-west-1(CIDR : 10.23.0.0/16) : US West (N. California)
-us-west-2(CIDR : 10.33.0.0/16) : US West (Oregon)
-eu-west-1(CIDR : 10.43.0.0/16) : EU (Ireland)
-eu-central-1(CIDR : 10.53.0.0/16) : EU (Frankfurt)
-ap-southeast-1(CIDR : 10.63.0.0/16) : Asia Pacific (Singapore)
-ap-southeast-2(CIDR : 10.73.0.0/16) : Asia Pacific (Sydney)
-ap-northeast-1(CIDR : 10.83.0.0/16) : Asia Pacific (Tokyo)
-sa-east-1(CIDR : 10.93.0.0/16) : South America (Sao Paulo) 
+* us-east-1(10.13.0.0/16) : US East (N. Virginia)
+* us-west-1(10.23.0.0/16) : US West (N. California)
+* us-west-2(10.33.0.0/16) : US West (Oregon)
+* eu-west-1(10.43.0.0/16) : EU (Ireland)
+* eu-central-1(10.53.0.0/16) : EU (Frankfurt)
+* ap-southeast-1(10.63.0.0/16) : Asia Pacific (Singapore)
+* ap-southeast-2(10.73.0.0/16) : Asia Pacific (Sydney)
+* ap-northeast-1(10.83.0.0/16) : Asia Pacific (Tokyo)
+* sa-east-1(10.93.0.0/16) : South America (Sao Paulo) 
 ```
 
 <br>
