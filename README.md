@@ -5,17 +5,66 @@ AWS CloudFormation for VPC
 
 # Supported Region
 
-```
-* us-east-1(10.13.0.0/16) : US East (N. Virginia)
-* us-west-1(10.23.0.0/16) : US West (N. California)
-* us-west-2(10.33.0.0/16) : US West (Oregon)
-* eu-west-1(10.43.0.0/16) : EU (Ireland)
-* eu-central-1(10.53.0.0/16) : EU (Frankfurt)
-* ap-southeast-1(10.63.0.0/16) : Asia Pacific (Singapore)
-* ap-southeast-2(10.73.0.0/16) : Asia Pacific (Sydney)
-* ap-northeast-1(10.83.0.0/16) : Asia Pacific (Tokyo)
-* sa-east-1(10.93.0.0/16) : South America (Sao Paulo) 
-```
+<table>
+    <tr>
+        <td>Region</td>
+        <td>Region Name</td>
+        <td>VPC CIDR</td>
+    </tr>
+
+    <tr>
+        <td>us-east-1</td>
+        <td>US East (N. Virginia)</td>
+        <td>10.13.0.0/16</td>
+    </tr>
+    
+    <tr>
+        <td>us-west-1</td>
+        <td>US West (N. California)</td>
+        <td>10.23.0.0/16</td>
+    </tr>
+    
+    <tr>
+        <td>us-west-2</td>
+        <td>US West (Oregon)</td>
+        <td>10.33.0.0/16</td>
+    </tr>
+    
+    <tr>
+        <td>eu-west-1</td>
+        <td>EU (Ireland)</td>
+        <td>10.43.0.0/16</td>
+    </tr>
+    
+    <tr>
+        <td>eu-central-1</td>
+        <td>EU (Frankfurt)</td>
+        <td>10.53.0.0/16</td>
+    </tr>
+    
+    <tr>
+        <td>ap-southeast-1</td>
+        <td>Asia Pacific (Singapore)</td>
+        <td>10.63.0.0/16</td>
+    </tr>
+    
+    <tr>
+        <td>ap-southeast-2</td>
+        <td>Asia Pacific (Sydney)</td>
+        <td>10.73.0.0/16</td>
+    </tr>
+    
+    <tr>
+        <td>ap-northeast-1</td>
+        <td>Asia Pacific (Tokyo)</td>
+        <td>10.83.0.0/16</td>
+    </tr>
+    
+    <tr>
+        <td>sa-east-1</td>
+        <td>South America (Sao Paulo)</td>
+        <td>10.93.0.0/16</td>
+    </tr>
 
 <br>
 
