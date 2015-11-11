@@ -28,5 +28,7 @@ AWS CloudFormation for VPC
 <table>
     <tr>
         <td>Foo</td>
+        <td>Foo</td>
+        <td>Foo</td>
     </tr>
 </table>
