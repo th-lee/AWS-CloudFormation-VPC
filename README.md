@@ -79,7 +79,7 @@ AWS CloudFormation for VPC
 + 1 * VPC
 + 5 * Subnets : ExternalELB / Public / Private / DB / InternalELB
 + 1 * Internet Gateway
-+ 2 * Availability Zone for each Regions 
++ 2 * Availability Zone(for each Regions)
 
 <br>
 <br>
@@ -90,21 +90,21 @@ AWS CloudFormation for VPC
 
 <table>
 	<tr>
-		<td colspan=3>A-Class</td>
-		<td colspan=3>B-Class</td>
-		<td colspan=3>C-Class</td>
-		<td>D-Class</td>
+		<td colspan=3 width=12>A-Class</td>
+		<td colspan=3 width=12>B-Class</td>
+		<td colspan=3 width=12>C-Class</td>
+		<td width=4>D-Class</td>
 	</tr>
 	<tr>
-		<td>N/A</td>
-		<td>1(fixed)</td>
-		<td>0(fixed)</td>
-		<td colspan=2>Region</td>
-		<td>Biz Svc</td>
-		<td>Pub/Pri</td>
-		<td>AZ</td>
-		<td>Subnet</td>
-		<td>0</td>
+		<td width=4>N/A</td>
+		<td width=4>1(fixed)</td>
+		<td width=4>0(fixed)</td>
+		<td colspan=2 width=8>Region</td>
+		<td width=4>Biz Svc</td>
+		<td width=4>Pub/Pri</td>
+		<td width=4>AZ</td>
+		<td width=4>Subnet</td>
+		<td width=4>0</td>
 	<tr>
 	
 </table>	
