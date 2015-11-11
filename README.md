@@ -39,7 +39,8 @@ AWS CloudFormation for VPC
         <td>Database2</td>
         <td>InELB1</td>
         <td>InELB2</td>
-        
+    </tr>
+    <tr>
         <td>us-east-1</td>
         <td>10.13.0.0/16</td>
         <td>10.13.111.0/24</td>
