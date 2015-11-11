@@ -27,8 +27,18 @@ AWS CloudFormation for VPC
 
 <table>
     <tr>
-        <td>Foo</td>
-        <td>Foo</td>
-        <td>Foo</td>
+        <td> </td> 
+        <td>VPC</td>
+        <td>ExELB1</td>
+        <td>ExELB2</td>
+        <td>Public1</td>
+        <td>Public2</td>
+        <td>Private1</td>
+        <td>Private2</td>
+        <td>Database1</td>
+        <td>Database2</td>
+        <td>InELB1</td>
+        <td>InELB2</td>
+        
     </tr>
 </table>
