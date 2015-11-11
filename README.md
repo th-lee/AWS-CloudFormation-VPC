@@ -1,6 +1,9 @@
 # AWS-CloudFormation-VPC
 AWS CloudFormation for VPC
 
+
+![VPC Architecture](VPCArchitecture.jpg)
+
 <br>
 
 # Supported Region
