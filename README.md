@@ -67,11 +67,22 @@ AWS CloudFormation for VPC
     </tr>
 
 <br>
+<br>
+<br>
+
+
 
 # Using Resource
 + 1 * VPC
-+ 4 * Subnets : ELB / Public / Private / DB
++ 5 * Subnets : ExternalELB / Public / Private / DB / InternalELB
 + 1 * Internet Gateway
++ 
+
+<br>
+<br>
+<br>
+
+
 
 
 <table>
