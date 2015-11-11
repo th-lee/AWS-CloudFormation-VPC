@@ -86,7 +86,7 @@ AWS CloudFormation for VPC
 <br>
 
 
-# IP Address Digit
+## IP Address Digit
 
 <table>
 	<tr>
@@ -104,6 +104,7 @@ AWS CloudFormation for VPC
 		<td>Pub/Pri</td>
 		<td>AZ</td>
 		<td>Subnet</td>
+		<td>0</td>
 	<tr>
 	
 </table>	
