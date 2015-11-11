@@ -25,3 +25,8 @@ AWS CloudFormation for VPC
 + 1 * Internet Gateway
 
 
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
