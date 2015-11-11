@@ -99,7 +99,7 @@ AWS CloudFormation for VPC
 		<td width=80>N/A</td>
 		<td width=80>1(fixed)</td>
 		<td width=80>0(fixed)</td>
-		<td colspan=2 width=160>Region</td>
+		<td colspan=2 width=160>Region(2-digit)</td>
 		<td width=80>Biz Svc</td>
 		<td width=80>Pub/Pri</td>
 		<td width=80>AZ</td>
