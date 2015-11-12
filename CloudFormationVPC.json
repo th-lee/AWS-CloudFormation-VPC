@@ -222,7 +222,7 @@
 			"Type":"AWS::EC2::VPCGatewayAttachment",
 			"Properties":{
 				"VpcId":{ "Ref":"VPC" },
-				"InternetGatewayId":{ "Ref":"IGW" }
+				"InternetGatewayId":{ "Ref":"InternetGateway" }
 			}
 		},
 		
@@ -239,7 +239,7 @@
 			"DependsOn":"GatewayToInternet",
 			"Properties":{
 				"DestinationCidrBlock":"0.0.0.0/0",
-				"GatewayId":{ "Ref":"IGW" },
+				"GatewayId":{ "Ref":"InternetGateway" },
 				"RouteTableId":{ "Ref":"PublicRouteTable" }
 			}
 		},
@@ -495,10 +495,20 @@
 			"Description" : "VPCId of the newly created VPC",
 			"Value" : { "Ref" : "VPC" }
 		},
-			
+
+		"myVPCCIDR" : {
+			"Description" : "VPC CIDR of the newly created VPC",
+			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "VPC" ] }
+		},
+		
 		"ExtELBSubnet1Id" : {
 			"Description" : "SubnetId of the External ELB Tier Subnet AZ A",
 			"Value" : { "Ref" :"ExtELBSubnetA" }
+		},
+		
+		"ExtELBSubnet1CIDR" : {
+			"Description" : "Subnet CIDR of the External ELB Tier Subnet AZ A",
+			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "ExtELB1" ] }
 		},
 		
 		"ExtELBSubnet2Id" : {
@@ -506,14 +516,29 @@
 			"Value" : { "Ref" : "ExtELBSubnetB" }
 		},
 		
+		"ExtELBSubnet2CIDR" : {
+			"Description" : "Subnet CIDR of the External ELB Tier Subnet AZ B",
+			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "ExtELB2" ] }
+		},
+		
 		"PublicSubnet1Id" : {
 			"Description" : "SubnetId of the Public Tier Subnet AZ A",
 			"Value" : { "Ref" : "PublicSubnetA" }
 		},
-			
+		
+		"PublicSubnet1CIDR" : {
+			"Description" : "Subnet CIDR of the Public Tier Subnet AZ A",
+			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "Public1" ] }
+		},
+		
 		"PublicSubnet2Id" : {
 			"Description" : "SubnetId of the Public Tier Subnet AZ B",
 			"Value" : { "Ref" : "PublicSubnetB" }
+		},
+		
+		"PublicSubnet2CIDR" : {
+			"Description" : "Subnet CIDR of the Public Tier Subnet AZ B",
+			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "Public2" ] }
 		},
 		
 		"PrivateSubnet1Id" : {
@@ -521,29 +546,59 @@
 			"Value" : { "Ref" : "PrivateSubnetA" }
 		},
 		
+		"PrivateSubnet1CIDR" : {
+			"Description" : "Subnet CIDR of the Private Tier Subnet AZ A",
+			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "Private1" ] }
+		},
+		
 		"PrivateSubnet2Id" : {
 			"Description" : "SubnetId of the Private Tier Subnet AZ B",
 			"Value" : { "Ref" : "PrivateSubnetB" }
 		},
 		
+		"PrivateSubnet2CIDR" : {
+			"Description" : "Subnet CIDR of the Private Tier Subnet AZ B",
+			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "Private2" ] }
+		},
+		
 		"DatabaseSubnet1Id" : {
-			"Description" : "SubnetId of the Database Tier Subnet A",
+			"Description" : "SubnetId of the Database Tier Subnet AZ A",
 			"Value" : { "Ref" : "DBSubnetA" }
 		},
 		
+		"DatabaseSubnet1CIDR" : {
+			"Description" : "Subnet CIDR of the Database Tier Subnet AZ A",
+			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "Database1" ] }
+		},
+		
 		"DatabaseSubnet2Id" : {
-			"Description" : "SubnetId of the Database Tier Subnet B",
-			"Value" : { "Ref" : "DBSubnet2" }
+			"Description" : "SubnetId of the Database Tier Subnet AZ B",
+			"Value" : { "Ref" : "DBSubnetB" }
+		},
+		
+		"DatabaseSubnet2CIDR" : {
+			"Description" : "Subnet CIDR of the Database Tier Subnet AZ B",
+			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "Database2" ] }
 		},
 		
 		"IntELBSubnet1Id" : {
-			"Description" : "SubnetId of the Internal ELB Tier Subnet A",
+			"Description" : "SubnetId of the Internal ELB Tier Subnet AZ A",
 			"Value" : { "Ref" : "IntELBSubnetA" }
 		},
 		
+		"IntELBSubnet1CIDR" : {
+			"Description" : "Subnet CIDR of the Internal ELB Tier Subnet AZ A",
+			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "IntELB1" ] }
+		},
+		
 		"IntELBSubnet2Id" : {
-			"Description" : "SubnetId of the Internal ELB Tier Subnet B",
+			"Description" : "SubnetId of the Internal ELB Tier Subnet AZ B",
 			"Value" : { "Ref" : "IntELBSubnetB" }
+		},
+		
+		"IntELBSubnet2CIDR" : {
+			"Description" : "Subnet CIDR of the Internal ELB Tier Subnet AZ B",
+			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "IntELB2" ] }
 		}
     	}
 }
