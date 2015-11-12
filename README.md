@@ -122,11 +122,11 @@ AWS CloudFormation for VPC
         <td>10.13.0.0/16</td>
     </tr>
     <tr>
-        <td>ExELB1</td>
+        <td>ExtELB1</td>
         <td>10.13.111.0/24</td>
     </tr>
     <tr>
-        <td>ExELB2</td>
+        <td>ExtELB2</td>
 	<td>10.13.121.0/24</td>
     </tr>
     <tr>
@@ -154,11 +154,11 @@ AWS CloudFormation for VPC
 	<td>10.13.224.0/24</td>
     </tr>
     <tr>
-        <td>InELB1</td>
+        <td>IntELB1</td>
 	<td>10.13.215.0/24</td>
     </tr>
     <tr>
-        <td>InELB2</td>
+        <td>IntELB2</td>
 	<td>10.13.225.0/24</td>
     </tr>
 
