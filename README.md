@@ -79,7 +79,8 @@ AWS CloudFormation for VPC
 + 1 * VPC
 + 5 * Subnets : ExternalELB / Public / Private / DB / InternalELB
 + 1 * Internet Gateway
-+ 2 * Availability Zone(for each Regions)
++ 2 * Availability Zone(for each Region)
++ Not Included NAT
 
 <br>
 <br>
