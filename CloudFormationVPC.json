@@ -489,7 +489,7 @@
 		},
 		
 		"Outputs":{
-			"VPC_Id":{
+			"myVPCId":{
 				"Description":"VPCId of the newly created VPC",
 				"Value":{ "Ref":"VPC" }
 			},
