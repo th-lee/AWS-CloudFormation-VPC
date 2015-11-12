@@ -163,3 +163,6 @@ AWS CloudFormation for VPC
     </tr>
 
 </table>
+
+
+![myVPC](CloudFormationOutput.jpg)
