@@ -238,9 +238,9 @@
 			"Type":"AWS::EC2::Route",
 			"DependsOn":"GatewayToInternet",
 			"Properties":{
-				"RouteTableId":{ "Ref":"PublicRouteTable" },
 				"DestinationCidrBlock":"0.0.0.0/0",
-				"GatewayId":{ "Ref":"InternetGateway" }
+				"GatewayId":{ "Ref":"IGW" },
+				"RouteTableId":{ "Ref":"PublicRouteTable" }
 			}
 		},
 		
@@ -486,63 +486,64 @@
 				"RouteTableId" : { "Ref" : "IELBRouteTable" }, 
 				"SubnetId" : { "Ref" : "IntELBSubnetB" }
 			}
+		}
+	},
+		
+	"Outputs" : {
+			
+		"myVPCId" : {
+			"Description" : "VPCId of the newly created VPC",
+			"Value" : { "Ref" : "VPC" }
+		},
+			
+		"ExtELBSubnet1Id" : {
+			"Description" : "SubnetId of the External ELB Tier Subnet AZ A",
+			"Value" : { "Ref" :"ExtELBSubnetA" }
 		},
 		
-		"Outputs":{
-			"myVPCId":{
-				"Description":"VPCId of the newly created VPC",
-				"Value":{ "Ref":"VPC" }
-			},
+		"ExtELBSubnet2Id" : {
+			"Description" : "SubnetId of the External ELB Tier Subnet AZ B",
+			"Value" : { "Ref" : "ExtELBSubnetB" }
+		},
+		
+		"PublicSubnet1Id" : {
+			"Description" : "SubnetId of the Public Tier Subnet AZ A",
+			"Value" : { "Ref" : "PublicSubnetA" }
+		},
 			
-			"ExtELBSubnet1Id":{
-				"Description":"SubnetId of the External ELB Tier Subnet AZ A",
-				"Value":{ "Ref":"ExtELBSubnetA" }
-			},
-			
-			"ExtELBSubnet2Id":{
-				"Description":"SubnetId of the External ELB Tier Subnet AZ B",
-				"Value":{ "Ref":"ExtELBSubnetB" }
-			},
-			
-			"PublicSubnet1Id":{
-				"Description":"SubnetId of the Public Tier Subnet AZ A",
-				"Value":{ "Ref":"PublicSubnetA" }
-			},
-			
-			"PublicSubnet2Id":{
-				"Description":"SubnetId of the Public Tier Subnet AZ B",
-				"Value":{ "Ref":"PublicSubnetB" }
-			},
-			
-			"PrivateSubnet1Id":{
-				"Description":"SubnetId of the Private Tier Subnet AZ A",
-				"Value":{ "Ref":"PrivateSubnetA" }
-			},
-			
-			"PrivateSubnet2Id":{
-				"Description":"SubnetId of the Private Tier Subnet AZ B",
-				"Value":{ "Ref":"PrivateSubnetB" }
-			},
-			
-			"DatabaseSubnet1Id":{
-				"Description":"SubnetId of the Database Tier Subnet A",
-				"Value":{ "Ref":"DBSubnetA" }
-			},
-			
-			"DatabaseSubnet2Id":{
-				"Description":"SubnetId of the Database Tier Subnet B",
-				"Value":{ "Ref":"DBSubnet2" }
-			},
-			
-			"IntELBSubnet1Id":{
-				"Description":"SubnetId of the Internal ELB Tier Subnet A",
-				"Value":{ "Ref":"IntELBSubnetA" }
-			},
-			
-			"IntELBSubnet2Id":{
-				"Description":"SubnetId of the Internal ELB Tier Subnet B",
-				"Value":{ "Ref":"IntELBSubnetB" }
-			}
-    		}
+		"PublicSubnet2Id" : {
+			"Description" : "SubnetId of the Public Tier Subnet AZ B",
+			"Value" : { "Ref" : "PublicSubnetB" }
+		},
+		
+		"PrivateSubnet1Id" : {
+			"Description" : "SubnetId of the Private Tier Subnet AZ A",
+			"Value" : { "Ref" : "PrivateSubnetA" }
+		},
+		
+		"PrivateSubnet2Id" : {
+			"Description" : "SubnetId of the Private Tier Subnet AZ B",
+			"Value" : { "Ref" : "PrivateSubnetB" }
+		},
+		
+		"DatabaseSubnet1Id" : {
+			"Description" : "SubnetId of the Database Tier Subnet A",
+			"Value" : { "Ref" : "DBSubnetA" }
+		},
+		
+		"DatabaseSubnet2Id" : {
+			"Description" : "SubnetId of the Database Tier Subnet B",
+			"Value" : { "Ref" : "DBSubnet2" }
+		},
+		
+		"IntELBSubnet1Id" : {
+			"Description" : "SubnetId of the Internal ELB Tier Subnet A",
+			"Value" : { "Ref" : "IntELBSubnetA" }
+		},
+		
+		"IntELBSubnet2Id" : {
+			"Description" : "SubnetId of the Internal ELB Tier Subnet B",
+			"Value" : { "Ref" : "IntELBSubnetB" }
+		}
     	}
 }
