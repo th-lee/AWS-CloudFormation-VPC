@@ -446,57 +446,57 @@
 		
 	"Outputs" : {
 			
-		"myVPC CIDR" : {
+		"myVPCCIDR" : {
 			"Description" : "VPC CIDR of the newly created VPC",
 			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "VPC" ] }
 		},
 		
-		"ExtELB Subnet1 CIDR" : {
+		"ExtELBSubnet1CIDR" : {
 			"Description" : "Subnet CIDR of the External ELB Tier Subnet AZ A",
 			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "ExtELB1" ] }
 		},
 		
-		"ExtELB Subnet2 CIDR" : {
+		"ExtELBSubnet2CIDR" : {
 			"Description" : "Subnet CIDR of the External ELB Tier Subnet AZ B",
 			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "ExtELB2" ] }
 		},
 		
-		"Public Subnet1 CIDR" : {
+		"PublicSubnet1CIDR" : {
 			"Description" : "Subnet CIDR of the Public       Tier Subnet AZ A",
 			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "Public1" ] }
 		},
 		
-		"Public Subnet2 CIDR" : {
+		"PublicSubnet2CIDR" : {
 			"Description" : "Subnet CIDR of the Public       Tier Subnet AZ B",
 			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "Public2" ] }
 		},
 		
-		"Private Subnet1 CIDR" : {
+		"PrivateSubnet1CIDR" : {
 			"Description" : "Subnet CIDR of the Private      Tier Subnet AZ A",
 			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "Private1" ] }
 		},
 		
-		"Private Subnet2 CIDR" : {
+		"PrivateSubnet2CIDR" : {
 			"Description" : "Subnet CIDR of the Private      Tier Subnet AZ B",
 			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "Private2" ] }
 		},
 		
-		"Database Subnet1 CIDR" : {
+		"DatabaseSubnet1CIDR" : {
 			"Description" : "Subnet CIDR of the Database     Tier Subnet AZ A",
 			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "Database1" ] }
 		},
 		
-		"Database Subnet2 CIDR" : {
+		"DatabaseSubnet2CIDR" : {
 			"Description" : "Subnet CIDR of the Database     Tier Subnet AZ B",
 			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "Database2" ] }
 		},
 		
-		"IntELB Subnet1 CIDR" : {
+		"IntELBSubnet1CIDR" : {
 			"Description" : "Subnet CIDR of the Internal ELB Tier Subnet AZ A",
 			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "IntELB1" ] }
 		},
 		
-		"IntELB Subnet2 CIDR" : {
+		"IntELBSubnet2CIDR" : {
 			"Description" : "Subnet CIDR of the Internal ELB Tier Subnet AZ B",
 			"Value" : { "Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "IntELB2" ] }
 		}
