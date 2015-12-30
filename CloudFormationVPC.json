@@ -162,14 +162,14 @@
 				"CidrBlock":{
 					"Fn::FindInMap":[ "myVPCSubnetConfig", { "Ref":"AWS::Region" }, "VPC" ]
 				},
-				"Tags":[ { "Key":"Name", "Value":"myVPC" } ]
+				"Tags":[ { "Key":"Name", "Value":{ "Fn::Join" : [ "-", [ { "Ref" : "ServiceName" }, { "Ref" : "AWS::Region" } ] ] } } ]
 			}
 		},
 		
 		"InternetGateway":{
 			"Type":"AWS::EC2::InternetGateway",
 			"Properties":{
-				"Tags":[ { "Key":"Name", "Value":"myVPC IGW" } ]
+				"Tags":[ { "Key":"Name", "Value":{ "Fn::Join" : [ "-", [ { "Ref" : "ServiceName" }, { "Ref" : "AWS::Region" }, "IGW" ] ] } } ]
 			}
 		},
 		
