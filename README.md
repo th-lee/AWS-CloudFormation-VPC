@@ -68,6 +68,12 @@ AWS CloudFormation for VPC
         <td>South America (Sao Paulo)</td>
         <td>10.93.0.0/16</td>
     </tr>
+    
+    <tr>
+        <td>ap-northeast-2</td>
+        <td>Asia Pacific (Seoul)</td>
+        <td>10.103.0.0/16</td>
+    </tr>
 </table>
 <br>
 <br>
