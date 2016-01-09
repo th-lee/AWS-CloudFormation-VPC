@@ -83,6 +83,14 @@
 				"Private1" :"10.93.213.0/24", "Private2" :"10.93.223.0/24",
 				"Database1":"10.93.214.0/24", "Database2":"10.93.224.0/24",
 				"IntELB1"  :"10.93.215.0/24", "IntELB2"  :"10.93.225.0/24"
+			},
+			"ap-northeast-2":{
+				"VPC"      :"10.103.0.0/16",
+				"ExtELB1"  :"10.103.111.0/24", "ExtELB2"  :"10.103.121.0/24",
+				"Public1"  :"10.103.112.0/24", "Public2"  :"10.103.122.0/24",
+				"Private1" :"10.103.213.0/24", "Private2" :"10.103.223.0/24",
+				"Database1":"10.103.214.0/24", "Database2":"10.103.224.0/24",
+				"IntELB1"  :"10.103.215.0/24", "IntELB2"  :"10.103.225.0/24"
 			}
 		},
 		
@@ -149,6 +157,13 @@
 				"Private1" :"sa-east-1a", "Private2" :"sa-east-1b",
 				"Database1":"sa-east-1a", "Database2":"sa-east-1b",
 				"IntELB1"  :"sa-east-1a", "IntELB2"  :"sa-east-1b"
+			},
+			"ap-northeast-2":{
+				"ExtELB1"  :"ap-northeast-2a", "ExtELB2"  :"ap-northeast-2c",
+				"Public1"  :"ap-northeast-2a", "Public2"  :"ap-northeast-2c",
+				"Private1" :"ap-northeast-2a", "Private2" :"ap-northeast-2c",
+				"Database1":"ap-northeast-2a", "Database2":"ap-northeast-2c",
+				"IntELB1"  :"ap-northeast-2a", "IntELB2"  :"ap-northeast-2c"
 			}
 		}
 	},
